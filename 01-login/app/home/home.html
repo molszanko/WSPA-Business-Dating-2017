@@ -1,0 +1,6 @@
+<h4 ng-if="vm.auth.isAuthenticated()">
+    Jestes zalogowany!
+</h4>
+<h4 ng-if="!vm.auth.isAuthenticated()" align="center">
+  Nie jesteś zalogowany! <a ng-click="vm.auth.login()">Zaloguj</a> się aby kontynuować.
+</h4>

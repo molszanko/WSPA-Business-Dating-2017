@@ -1,0 +1,21 @@
+<nav>     
+    <div  align="center">        
+<br>
+      <button
+        id="qsLoginBtn"
+        class="btn btn-primary btn-margin"
+        ng-if="!vm.auth.isAuthenticated()"
+        ng-click="vm.auth.login()">
+          Zaloguj
+      </button>
+<br>
+      <button
+        id="qsLogoutBtn"
+        class="btn btn-primary btn-margin"
+        ng-if="vm.auth.isAuthenticated()"
+        ng-click="vm.auth.logout()">
+          Wyloguj
+      </button> 
+      <br>
+  </div>
+</nav>
